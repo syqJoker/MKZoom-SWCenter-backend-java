@@ -7,4 +7,6 @@ import java.util.List;
 public interface TestService {
     public List<Test> queryTestList();
     public Test queryTestById(String id);
+
+    int registerTest(Test test);
 }

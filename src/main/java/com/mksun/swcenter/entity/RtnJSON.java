@@ -22,9 +22,9 @@ public class RtnJSON {
         return this;
     }
 
-    public RtnJSON dataError(){
+    public RtnJSON dataError(String msg){
         this.code = 500;
-        this.msg = "数据不正确，请重试";
+        this.msg = msg;
         return this;
     }
 }

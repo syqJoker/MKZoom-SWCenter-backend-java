@@ -22,4 +22,9 @@ public class TestServiceImpl implements TestService {
     public Test queryTestById(String id) {
         return testDao.queryTestById(id);
     }
+
+    @Override
+    public int registerTest(Test test) {
+        return testDao.saveTest(test);
+    }
 }

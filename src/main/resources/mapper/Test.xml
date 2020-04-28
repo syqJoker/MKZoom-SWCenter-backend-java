@@ -9,4 +9,7 @@
     <select id="queryTestById" resultType="com.mksun.swcenter.entity.Test">
         select id, create_id as createId , create_time as createTime,name from test where id = #{id};
     </select>
+    <insert id="saveTest" parameterType="com.mksun.swcenter.entity.Test">
+        insert into test (id, create_id  , create_time ,name ) values( #{id},#{createId},#{createTime},#{name});
+    </insert>
 </mapper>

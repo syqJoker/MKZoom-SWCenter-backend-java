@@ -11,4 +11,6 @@ import java.util.List;
 public interface TestDao {
     List<Test> queryTestList();
     Test queryTestById(String id);
+
+    int saveTest(Test test);
 }
